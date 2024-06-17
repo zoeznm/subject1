@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Neo-Brutalist Style - Because beauty is overrated. */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::selection {
+	background: grey;
+	color: #eee;
+}
+
+body {
+	font-family: "IBM Plex Mono", monospace;
+	color: #333;
+	margin: 0;
+	position: relative;
+	line-height: 1.2em;
+	font-size: 15px;
+	background: repeating-linear-gradient(
+		90deg,
+		lightpink,
+		lightpink 2px,
+		white 2px,
+		white 5px
+	);
+	background-attachment: fixed;
+}
+
+.dashboard {
+	display: grid;
+	grid-template-columns: repeat(6, 15.25%);
+	grid-gap: 0 1.67%;
+	margin: 20px auto;
+	padding: 20px;
+	border: 2px solid;
+	width: 1000px;
+	max-width: calc(100% - 40px);
+	background: lightgoldenrodyellow;
+	box-shadow: 1px 1px, 2px 2px, 3px 3px, 4px 4px;
+}
+
+.dashboard > div {
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #f7f7f7;
+	border: 2px solid;
+	grid-column: 1 / 7;
+	box-shadow: inherit;
+}
+
+.dashboard > div:hover {
+	background: lightcyan;
+	color: navy;
+}
+
+.dashboard > div:last-of-type {
+	margin-bottom: 19.5px;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-top: 0;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid;
+	position: relative;
+}
+
+h2::before,
+h2::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	width: 15px;
+	height: 100%;
+	left: -15px;
+	vertical-align: text-bottom;
+}
+
+h2::after {
+	left: unset;
+	right: -15px;
+	border-right: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 5px 0;
+	border-bottom: 2px dotted;
+}
+
+.focus-concentration div {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	border-bottom: 2px solid;
+	padding: 5px 0;
+}
+
+.top-square {
+	text-align: center;
+}
+
+.top-square h2 {
+	font-size: 2em;
+	padding-bottom: 10px;
+	border: none;
+}
+
+.top-square p {
+	font-size: 1.25em;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+
+@media (min-width: 800px) {
+
+	.dashboard .heading-title {
+		grid-column: 1 / 4;
+	}
+	.dashboard .exercise-table {
+		grid-column: 4 / 7;
+	}
+	.dashboard .focus-concentration {
+		grid-column: 1 / 5;
+	}
+	.dashboard .brain1 {
+		grid-column: 5 / 7;
+	}
+	.dashboard .brain2 {
+		grid-column: 1 / 3;
+	}
+	.dashboard .reactive-concentration {
+		grid-column: 3 / 7;
+	}
+
+	.focus-concentration div {
+		width: 33.333%;
+		float: left;
+		display: grid;
+		padding-left: 10px;
+		margin-left: -2px;
+		border-bottom: none;
+	}
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+
+    <div class="top-square">
+      <h2>focus concentration vs reactive focus!</h2>
+      <p>Let's find out together!</p>
+  
+    </div>
+  
+    <div class="heading-title">
+      <h2>Topic to talk about today</h2>
+      <div class="heading-title-contents">
+        <ul>
+          <li>Today we will learn about concentration. </li>
+          <li>Let's take a look at mainly focused</li>
+          <li>concentration and reactive concentration.</li>
+          <li>I hope you read carefully!</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="exercise-table">
+      <h2>Types of Concentration</h2>
+      <div class="heading-title-contents">
+        <ul>
+          <li>Did you know that there are</li>
+          <li>different types of concentration?</li>
+          <li>I would like to talk about two of</li>
+          <li>the many types of concentration.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="focus-concentration">
+      <h2>focus concentration</h2>
+      <ul>
+        <li>Active concentration that maintains the attention</li>
+        <li>required for me as a subject</li>
+        <li>The ability to concentrate when performing somewhat</li>
+        <li>boring, repetitive, or difficult tasks</li>
+      </ul>
+    </div>
+  
+    <div class="brain1">
+      <h2>responsible part of the brain</h2>
+      <ul>
+        <li>Focusing and concentration are </li>
+        <li>handled by the frontal lobe</li>
+        <li>and prefrontal cortex.</li>
+      </ul>
+    </div>
+  
+    <div class="brain2">
+      <h2>responsible part of the brain</h2>
+      <ul>
+        <li>
+          Responsive concentration is</li>
+        <li>responsible for the parietal </li>
+        <li>and temporal lobes.</li>
+  
+      </ul>
+    </div>
+  
+    <div class="reactive-concentration">
+      <h2>reactive focus</h2>
+      <ul>
+        <li>Passive concentration that is driven by stimulation</li>
+        <li>Concentration that appears naturally</li>
+        <li>when satisfying curiosity, which is a human instinct</li>
+      </ul>
+    </div>
+  
+  </div>
+</body>
+</html>
